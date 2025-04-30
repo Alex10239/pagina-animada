@@ -4,42 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Animada de Dibujos Animados</title>
-    <link rel="stylesheet" href="estilo.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #1e90ff, #000);
+            background-attachment: fixed;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            color: white;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 3rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        .character {
+            display: inline-block;
+            margin: 20px;
+            position: relative;
+        }
+
+        .character img {
+            max-width: 200px;
+            border-radius: 10px;
+            transition: border-color 0.5s ease, transform 0.3s ease;
+        }
+
+        .character.benimaru:hover img {
+            border: 5px solid red;
+            transform: scale(1.1);
+        }
+
+        .character.zoro:hover img {
+            border: 5px solid green;
+            transform: scale(1.1);
+        }
+
+        .character.gojou:hover img {
+            border: 5px solid purple;
+            transform: scale(1.1);
+        }
+
+        .character.sungjinwoo:hover img {
+            border: 5px solid black;
+            transform: scale(1.1);
+        }
+
+        .character.isagi:hover img {
+            border: 5px solid darkblue;
+            transform: scale(1.1);
+        }
+
+        .character.aomine:hover img {
+            border: 5px solid midnightblue;
+            transform: scale(1.1);
+        }
+
+        .character.killua:hover img {
+            border: 5px solid white; 
+            transform: scale(1.1);
+        }
+
+        .character.itachi:hover img {
+            border: 5px solid lightcoral; 
+            transform: scale(1.1);
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .character.sungjinwoo,
+        .character.isagi {
+            margin-top: 0; 
+        }
+
+        .character.gojou img {
+            max-width: 250px; 
+        }
+
+        .character.killua img {
+            max-width: 250px; 
+        }
+    </style>
 </head>
 <body>
     <h1>Página de Dibujos Animados</h1>
 
-    <div class="character">
-        <img src="benimaru.tp.jpeg" alt="Personaje 1">
+    <div class="row">
+        <div class="character benimaru">
+            <img src="benimaru.tp.jpeg" alt="Personaje 1">
+        </div>
+
+        <div class="character zoro">
+            <img src="zoro.roronoa.jpeg" alt="Personaje 2">
+        </div>
+
+        <div class="character gojou">
+            <img src="satoru.gojp.jpeg" alt="Personaje 3">
+        </div>
+
+        <div class="character itachi">
+            <img src="itachi.uchiha.jpeg" alt="Personaje 4">
+        </div>
     </div>
 
-    <div class="character character-delayed">
-        <img src="zoro.roronoa.jpeg" alt="Personaje 2">
-    </div>
+    <div class="row">
+        <div class="character sungjinwoo">
+            <img src="sung.jpeg" alt="Personaje 5">
+        </div>
 
-    <div class="character character-animated">
-        <img src="satoru.gojp.jpeg" alt="Personaje 3">
-    </div>
+        <div class="character isagi">
+            <img src="isagi.ychi.jpeg" alt="Personaje 6">
+        </div>
 
-    <div class="character character-bounce" style="position: relative; top: 50px;">
-        <img src="itachi.uchiha.jpeg" alt="Personaje 4">
-    </div>
+        <div class="character killua">
+            <img src="killua.zoldick.jpeg" alt="Personaje 7">
+        </div>
 
-    <div class="character">
-        <img src="sung.jpeg" alt="Personaje 5">
-    </div>
-
-    <div class="character character-delayed">
-        <img src="isagi.ychi.jpeg" alt="Personaje 6">
-    </div>
-
-    <div class="character">
-        <img src="killua.zoldick.jpeg" alt="Personaje 7">
-    </div>
-
-    <div class="character character-bounce">
-        <img src="aomine.dk.jpeg" alt="Personaje 8">
+        <div class="character aomine">
+            <img src="aomine.dk.jpeg" alt="Personaje 8">
+        </div>
     </div>
 
 </body>
 </html>
+
+
+
+
+
+
